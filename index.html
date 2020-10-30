@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html lang="en" style="filter: hue-rotate(62deg) contrast(1.8)">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>TronMax - Maximize your TRON!</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+	
+  <link rel="stylesheet" href="_anim/animate.min.css">	
+
+  <!-- Favicons -->
+  <link href="_assets/img/icon.ico" rel="icon">  
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="_assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="_assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="_assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+<div id="App">
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex flex-column align-items-center">
+
+      <h1>TRON<span class="highlighted">MAX</span></h1> 
+      <h2>Get up to 240% of your deposits!</h2>
+	  <h3><div class="social-links text-center">Earn <span class="highlighted">10%</span> daily, until you get <span class="highlighted">240%</span> on your deposits</div></h3>
+		
+	
+      <div class="countdown d-flex justify-content-center" v-if="this.contract.contract_IniTime != 0"> 
+
+		<div>
+          <h3><span class="highlighted">{{this.contract.startD}}</span></h3>
+          <h4>Days</h4>
+        </div>
+        <div>
+          <h3><span class="highlighted">{{this.contract.startH}}</span></h3>
+          <h4>Hours</h4>
+        </div>
+        <div>
+          <h3><span class="highlighted">{{this.contract.startM}}</span></h3>
+          <h4>Minutes</h4>
+        </div>
+        <div>
+          <h3><span class="highlighted">{{this.contract.startS}}</span></h3>
+          <h4>Seconds</h4>
+        </div>
+      </div> 
+      <div class="animate__animated animate__zoomIn" v-if="this.contract.contract_IniTime == 0"><br>
+        <img src="_assets/img/tron_logo.png" width="250" height="249" alt="" id="TronLogo"/> 
+	  </div> 		
+	  	
+
+      <div class="social-links text-center">
+        <a href="https://t.me/TronWinner" class="twitter"><i class="icofont-telegram"></i></a>
+        <a href="https://tronscan.org/#/contract/TBg8jGGc1NEidtFVWX4AoR8cyNeysuS9yv/code" class="linkedin"><i class="icofont-prescription"></i></a>
+      </div>
+
+    </div>
+  </header><!-- End #header -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2><span class="highlighted">MAX</span>IMIZE YOUR TRON</h2>
+          <p>For every 24 Hours without withdrawing your dividends, you can accumulate a Bonus of 2% per day, If you decide to make a withdrawal, this will decrease the Base Profit in 5% and the accumulated Bonus to 0%. You can refer people to this smart contract and earn referral commission of up to 2 levels.
+
+</p>        </div><div><p><br></p></div>
+		  
+		  
+		  
+		  <div class="section-title">
+          <h2>CONTRACT INFO</h2>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="icofont-bill"></i></div>
+            <h4 class="title"><a href="">TOTAL DEPOSITED</a></h4>
+            <div class="description">
+			 <h2><strong><font color="#24B7A4">{{this.contract.invested}}</font></strong></h2>	
+			</div>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="icofont-money-bag"></i></div>
+            <h4 class="title"><a href="">TOTAL REFERRAL REWARDS</a></h4>
+             <div class="description">
+			 <h2><strong><font color="#24B7A4">{{this.contract.refer_bonus}}</font></strong></h2>	
+			</div>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="icofont-user-alt-3"></i></div>
+            <h4 class="title"><a href="">USERS</a></h4>
+            <div class="description">
+			 <h2><strong><font color="#24B7A4">{{this.contract.investors}}</font></strong></h2>	
+			</div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Contact Us Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>USER AREA</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="icofont-wallet"></i>
+                <h4>Your Wallet</h4>
+                <p><a href="#ref">{{tron.account}}</a></p>
+              </div>
+
+              <div class="address">
+                <i class="icofont-bill"></i>
+                <h4>Active <span class="highlighted">Deposits</span></h4>
+				  <p>Your active deposits: <span class="highlighted">{{player.active_deposit}}</span> TRX</p>
+              </div>
+
+              <div class="address">
+                <i class="icofont-info"></i>                
+                <p>
+				 Each deposits consume a fee<br>
+					of <span class="highlighted">~ 2</span> TRX<br> 
+				 Each deposit will generate daily<br> 
+				 earnings of <span class="highlighted"> 10% </span> until <span class="highlighted"> 240% </span> <br>
+				 You can accumulate an additional<br> 
+				 <span class="highlighted"> 2% </span> daily if you do not Withdraw
+				</p>				  
+			  </div> <br><br>
+	         <div class="subscribe text-center">
+                <div class="input-group">
+                     <input type="number" min="100" step="50" v-model:number="invest" class="form-control" placeholder="Input your invest" aria-label="Input your invest" aria-describedby="invest-input">
+                   <div class="input-group-append">
+                     <span class="input-group-text" id="invest-input">TRX</span>
+                  </div>
+                </div><br>
+				 <!--
+                   <input type="button" 
+                   class="btn oxigen-button" 
+                   :class="{'btn-success': !insufficient_funds, 'btn-danger': insufficient_funds}" 
+                   :value="invest_caption" 
+                   :disabled="insufficient_funds || this.contract.contract_IniTime != 0"                                      
+                   id="invest-button"
+                   @click.prevent="deposit(invest)">
+				 -->
+                   <input type="button" 
+                   class="btn btn-success oxigen-button"                    
+                   value="Invest"                                                         
+                   id="invest-button"
+				   :disabled="this.contract.contract_IniTime != 0"  		  
+                   @click.prevent="deposit(invest)">				 
+             </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7 d-flex align-items-stretch"> 
+			<div class="info">
+			  <div class="address">
+                <i class="icofont-dashboard"></i>
+                <h4>Basic Profit</h4>
+                <p>Your current Basic Profit Now is: <span class="highlighted"> {{player.tarifN}}% </span></p>
+              </div>
+              <div class="address">
+                <i class="icofont-win-trophy"></i>
+                <h4>Bonus</h4>
+                <p>Your current Hold Bonus: <span class="highlighted"> {{player.tarifB}}% </span></p>
+              </div>
+              <div class="address">
+                <i class="icofont-money-bag"></i>
+				  <h4><span class="highlightedR">Withdrawn</span></h4>
+                <p>Total Withdrawn: <span class="highlighted"> {{player.total_withdrawn}} </span>TRX</p>
+              </div>				
+              <div class="address">
+                <i class="icofont-reply-all"></i>
+                <h4>Withdrawable</h4>
+                <p>Withdrawable (Divs+Refs): <span class="highlighted"> {{player.dividends}} </span> TRX</p>
+              </div>
+              <div class="address">
+                <i class="icofont-info"></i>                
+                <p>
+				 Wach Withdrawal consume a fee of <span class="highlighted"> ~ 2</span> TRX<br>
+				 With each Withdrawal your Basic Profit is reduced in <span class="highlighted"> 2% </span><br>
+				 With each Withdrawal your Hold Bonus is reset to <span class="highlighted"> 0% </span>
+				</p>				  
+			  </div> 
+				<div class="s-description text-center"> 
+				  <span>
+				   <!--	  
+                    <input type="button" 
+                    class="btn btn-success oxigen-button" 
+                    value="Reinvest" 	
+					:disabled="this.contract.contract_IniTime != 0 || player.dividends == 0"  
+                    @click="reinvest">                      
+	
+                    <input type="button" 
+                    class="btn btn-danger oxigen-button" 
+                    value="Withdraw" 
+					:disabled="this.contract.contract_IniTime != 0 || player.dividends == 0"	   
+                    @click="withdraw"> 
+                   -->
+                    <input type="button" 
+                    class="btn btn-success oxigen-button" 
+                    value="Reinvest" 
+					:disabled="this.contract.contract_IniTime != 0"	   
+                    @click="reinvest">                      
+	
+                    <input type="button" 
+                    class="btn btn-danger oxigen-button" 
+                    value="Withdraw"
+					:disabled="this.contract.contract_IniTime != 0"	   
+                    @click="withdraw">  					  
+				  </span>
+				</div>
+			</div>
+          </div>
+        </div><br>
+		  
+        <div class="row">
+          <div class="col-lg-12 d-flex align-items-stretch">
+		    <div id="ref" class="info">
+			  <div class="address">
+                <i class="icofont-user-alt-3"></i>
+                <h4>You Referral Link</h4>
+                <p>{{ location.origin }}/?ref={{ tron.account }} 
+					<span class="badge badge-pill badge-success" @click="copyText(location.origin + '/?ref=' + tron.account)" id="copy-link">
+						Copy
+					</span>
+				</p>
+			  </div>
+                          
+                          
+                           <div class="address">                              
+                              <h4>Level {{referrals[0].level}}</h4> 							
+                              <p>({{referrals[0].percent}}% Referral Rewards) - {{player.refLevel1}}</p>
+                           </div>	
+                           <div class="address">                              
+                              <h4>Level {{referrals[1].level}}</h4> 							
+                              <p>({{referrals[1].percent}}% Referral Rewards) - {{player.refLevel2}}</p>
+                           </div>					
+                   <!--    -->
+						  <div class="address">	
+							<i class="icofont-money-bag"></i>  
+                            <h4>Total Referral Profit</h4> 
+							<p> <span class="highlighted"> {{player.total_refer_bonus}} </span>TRX </p>
+						  </div>
+			</div>
+		  </div>
+		</div>			  
+
+      </div>
+    </section><!-- End Contact Us Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      
+      <div class="credits">
+        <a href="https://tronmax.co/">www.tronmax.co</a><br><br>
+<script>var _uox = _uox || {};(function() {var s=document.createElement("script");
+s.src="https://static.usuarios-online.com/uo2.min.js";document.getElementsByTagName("head")[0].appendChild(s);})();</script>
+<a href="https://www.usuarios-online.com/es/" data-id="47d95b5b871a76de595f2f9f4946790c" data-type="color" data-c1="#0d0c0c" data-c2="#faf0f0" data-c3="#db8c8c" target="_blank" id="uox_link">&nbsp;</a><br>
+		  
+      </div>
+    </div>
+  </footer><!-- End #footer -->
+ </div>
+	
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  
+  <div id="preloader"></div>	  	
+   
+	 
+  <!-- TronWeb -->
+  <script>var contractWallet = 'TBg8jGGc1NEidtFVWX4AoR8cyNeysuS9yv'; </script>    
+  <script src="tronweb_1/vue.min.js"></script>    
+  <script src="tronweb_1/tron.js"></script>
+  <script src="tronweb_1/scripts.js"></script>	
+	
+  <script src="_anim/animaciones.js"></script>
+
+  <!-- Vendor JS Files -->
+  <script src="_assets/vendor/jquery/jquery.min.js"></script>
+  <script src="_assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="_assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="_assets/vendor/php-email-form/validate.js"></script>
+  <script src="_assets/vendor/jquery-countdown/jquery.countdown.min.js"></script>
+  
+	
+	<!-- Template Main JS File -->
+  <script src="_assets/js/main.js"></script>
+
+</body>
+
+</html>
