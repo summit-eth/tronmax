@@ -1,3 +1,6 @@
+var launch_date = 1608595200000;
+
+
 (this.webpackJsonptronhero = this.webpackJsonptronhero || []).push([
     [0], {
         25: function(e, t, a) {
@@ -199,12 +202,12 @@
                                 className: "text-white"
                             }, "Home"))), r.a.createElement(U.a, null, r.a.createElement(X.a, {
                                 target: "_blank",
-                                href: "https://tronscan.org/#/contract/TEE9sCrKrqWbqQ9VXbdgTKn3xzmVc1FqVi/code"
+                                href: "https://tronscan.org/#/contract/TY5xDFGGdHiRE2niQc2U93eAP7dQCxnzJY/code"
                             }, r.a.createElement("h4", {
                                 className: "text-white"
                             }, "Contract"))), r.a.createElement(U.a, null, r.a.createElement(X.a, {
                                 target: "_blank",
-                                href: "https://t.me/tronfibr"
+                                href: "https://t.me/TronMax_Official"
                             }, r.a.createElement("h4", {
                                 className: "text-white"
                             }, "Telegram")))))))
@@ -239,13 +242,13 @@
                                 color: "default",
                                 target: "_blank",
                                 className: " btn-neutral btn-round btn-simple",
-                                href: "https://t.me/tronfibr"
+                                href: "https://t.me/TronMax_Official"
                             }, "English")))), r.a.createElement(g.a, null, r.a.createElement(x.a, {
                                 md: "12",
                                 className: "text-center"
                             }, r.a.createElement("h5", {
                                 className: "text-white"
-                            }, "\xa9Copyright 2020 TronMax.cc")))))
+                            }, "\xa9Copyright 2020 TronMax")))))
                         }
                     }]), n
                 }(r.a.Component),
@@ -260,15 +263,15 @@
                             walletBalance: "",
                             isLogin: !1,
                             ref: "0",
-                            refLink: "https://www.TronMax.cc",
+                            refLink: "https://tronmax.co",
                             val: "",
                             metacoinConfig: {
-                                address: "TEE9sCrKrqWbqQ9VXbdgTKn3xzmVc1FqVi"
+                                address: "TY5xDFGGdHiRE2niQc2U93eAP7dQCxnzJY"
                             },
                             status: "",
                             reinvestStatus: !0,
                             withdrawStatus: !1,
-                            launchDate: 1608566400e3,
+                            launchDate: launch_date,
                             totalInvested: 0,
                             totalReinvest: 0,
                             totalWithdrawn: 0,
@@ -630,9 +633,9 @@
                     }, {
                         key: "handleDeposit",
                         value: function(e) {
-                            e.preventDefault(), this.state.val >= 50 ? (this.setState({
+                            e.preventDefault(), this.state.val >= 100 ? (this.setState({
                                 status: "Loading..."
-                            }), this.deposit(this.state.val)) : b.b.error("Error: Minimum Investment is 50 TRX")
+                            }), this.deposit(this.state.val)) : b.b.error("Error: Minimum Investment is 100 TRX")
                         }
                     }, {
                         key: "handleReinvest",
@@ -690,9 +693,11 @@
                                 className: "homeT1"
                             }, ""), r.a.createElement("br", null), r.a.createElement("br", null), r.a.createElement("br", null), r.a.createElement("span", {
                                 className: "text-white homeT3"
-                            }, "Decentralized quick investment platform"), r.a.createElement("br", null), r.a.createElement("span", {
+                            }, "Auto-compounding Investment Platform"), r.a.createElement("br", null), r.a.createElement("span", {
                                 className: "text-white homeT3"
-                            }, "Earn 20% daily and profit up to 500%!")), r.a.createElement("div", {
+                            }, "15% Referral Bonus | 2,500 TRX Max per Withdrawal | 6 Hours Cooldown"), r.a.createElement("br", null), r.a.createElement("span", {
+                                className: "text-white homeT3"
+                            }, " Earn 25% daily and profit up to 500%!")), r.a.createElement("div", {
                                 className: "btn-wrapper"
                             }, r.a.createElement("div", {
                                 className: "button-container"
@@ -701,7 +706,7 @@
                                 color: "warning",
                                 size: "lg",
                                 target: "_blank",
-                                href: "https://tronscan.org/#/contract/TEE9sCrKrqWbqQ9VXbdgTKn3xzmVc1FqVi/code",
+                                href: "https://tronscan.org/#/contract/TY5xDFGGdHiRE2niQc2U93eAP7dQCxnzJY/code",
                                 style: s
                             }, "Contract"), r.a.createElement(N.a, {
                                 className: "btn pt-2 pb-2 pr-4 pl-4",
@@ -713,7 +718,7 @@
                                 className: "btn pt-2 pb-2 pr-4 pl-4",
                                 color: "warning",
                                 size: "lg",
-                                href: "https://t.me/tronfibr",
+                                href: "https://t.me/TronMax_Official",
                                 style: s
                             }, "Telegram"))))))), r.a.createElement("section", {
                                 className: "section section-lg section-coins",
@@ -762,7 +767,7 @@
                                 className: "line-warning"
                             })), r.a.createElement(R.a, null, r.a.createElement(T.a, {
                                 className: "text-left"
-                            }, r.a.createElement(A.a, null, "Your Wallet Address: ", t), r.a.createElement(A.a, null, "Your Wallet Balance: ", e), r.a.createElement(A.a, null, "Min Deposit: 50 TRX"), r.a.createElement(A.a, null, "Total Profit on Each Investment: 500%"), r.a.createElement(A.a, null, "Daily Profit: 20%"))), r.a.createElement(k.a, {
+                            }, r.a.createElement(A.a, null, "Your Wallet Address: ", t), r.a.createElement(A.a, null, "Your Wallet Balance: ", e), r.a.createElement(A.a, null, "Min Deposit: 50 TRX"), r.a.createElement(A.a, null, "Total Profit on Each Investment: 500%"), r.a.createElement(A.a, null, "Daily Profit: 25%"))), r.a.createElement(k.a, {
                                 className: "text-center"
                             }, r.a.createElement(W.a, null, r.a.createElement(C.a, {
                                 className: "text-white",
@@ -809,7 +814,7 @@
                                 className: "progress-container progress-success"
                             }, r.a.createElement("span", {
                                 className: "progress-badge text-black"
-                            }, "Withdraw Or Reinvest (Every 6 hours):"), r.a.createElement(f.a, {
+                            }, "Withdraw Or Reinvest (Cooldown: 6 hours):"), r.a.createElement(f.a, {
                                 max: "100",
                                 value: this.state.userWithdrawProgress,
                                 barClassName: "progress-bar-success"
@@ -835,7 +840,7 @@
                                 className: "line-warning"
                             })), r.a.createElement(R.a, null, r.a.createElement(T.a, {
                                 className: "text-left"
-                            }, r.a.createElement(A.a, null, "Referral commissions are payable on first investments and when a Investor chooses to invest again."), r.a.createElement(A.a, null), r.a.createElement(A.a, null, "Total Referral Reward Available : ", this.state.user_availableReferrerEarnings, " TRX"), r.a.createElement(A.a, null, "Total Referral Reward Reinvested: ", this.state.user_referrerEarnings, " TRX"), r.a.createElement(A.a, null, "Level 1 (10%) : ", this.state.user_level1RefCount), r.a.createElement(A.a, null, "Level 2 (7%) : ", this.state.user_level2RefCount), r.a.createElement(A.a, null, "Level 3 (3%) : ", this.state.user_level3RefCount), r.a.createElement(A.a, null), r.a.createElement(A.a, null, "Your Referral Link : ", this.state.copyStatus ? r.a.createElement("span", {
+                            }, r.a.createElement(A.a, null, "Referral commissions are payable on first investments and when a Investor chooses to invest again."), r.a.createElement(A.a, null), r.a.createElement(A.a, null, "Total Referral Reward Available : ", this.state.user_availableReferrerEarnings, " TRX"), r.a.createElement(A.a, null, "Total Referral Reward Reinvested: ", this.state.user_referrerEarnings, " TRX"), r.a.createElement(A.a, null, "Level 1 (8%) : ", this.state.user_level1RefCount), r.a.createElement(A.a, null, "Level 2 (5%) : ", this.state.user_level2RefCount), r.a.createElement(A.a, null, "Level 3 (2%) : ", this.state.user_level3RefCount), r.a.createElement(A.a, null), r.a.createElement(A.a, null, "Your Referral Link : ", this.state.copyStatus ? r.a.createElement("span", {
                                 style: {
                                     color: "red"
                                 }
@@ -854,7 +859,7 @@
                                 }
                             }, this.state.refLink + "/?r=" + this.state.userId)) : this.state.refLink)))))), r.a.createElement(g.a, null, r.a.createElement(x.a, null, r.a.createElement("label", {
                                 className: "text-white d-inline"
-                            }, "IMPORTANT: Have a minimum of 5-10 trx balance in your wallet for transaction fees."))))), r.a.createElement("section", {
+                            }, "IMPORTANT: Maintain 5-10 trx balance in your wallet for transaction fees."))))), r.a.createElement("section", {
                                 className: "section section-lg section-coins",
                                 id: "invest"
                             }, r.a.createElement(y.a, null, r.a.createElement("h1", {
@@ -903,7 +908,7 @@
                                 className: "line-warning"
                             }), r.a.createElement("p", {
                                 className: "text-justify"
-                            }, "Deposit a minimum of 50 TRX. There are no maximum limits on investments. Investors will generate 20% daily ROI for 5 days or up to a maximum of 500% ROI. TronMax has compounding mechanics built-in.", r.a.createElement("br", null), "There are 3 levels of referral commission which an Investor can earn. An Investors daily withdrawal limit is 5,000 TRX (Anti Whale). Investors will have an option to Reinvest their profits or withdraw to their wallet.")))), r.a.createElement(g.a, {
+                            }, "Deposit a minimum of 50 TRX. There are no maximum limits on investments. Investors will generate 25% daily ROI for 20 days or up to a maximum of 500% ROI. TronMax has compounding mechanics built-in.", r.a.createElement("br", null), "There are 3 levels of referral commission which an Investor can earn. An Investors withdrawal limit is 2,500 TRX and then a 6 hour cooldown is imposed (Anti Whale). Investors will have an option to Reinvest their profits or withdraw to their wallet.")))), r.a.createElement(g.a, {
                                 className: "row-grid justify-content-center"
                             }, r.a.createElement(x.a, {
                                 lg: "4"
@@ -919,7 +924,7 @@
                                 className: "line-primary"
                             }), r.a.createElement("p", {
                                 className: "text-justify"
-                            }, "Referral commission will only be paid on investment and when a investor decides to invest again. Referral commissions are stored separately in the Reinvest Wallet and the investor will be allowed to reinvest the referral commission (subject to a minimum of 50 trx). Rather than withdrawing the commission straight to their wallet, the investor is allowed to reinvest the referral commission (subject to a minimum of 50 trx).", r.a.createElement("br", null), "This allows the commission to earn ROI exponentially. Compounding will apply and the investor will earn 20% ROI for 5 days on any new reinvestment."))), r.a.createElement(x.a, {
+                            }, "Referral commission will only be paid on investment and when a investor decides to invest again. Referral commissions are stored separately in the Reinvest Wallet and the investor will be allowed to reinvest the referral commission (subject to a minimum of 50 trx). Rather than withdrawing the commission straight to their wallet, the investor is allowed to reinvest the referral commission (subject to a minimum of 50 trx).", r.a.createElement("br", null), "This allows the commission to earn ROI exponentially. Compounding will apply and the investor will earn 25% ROI for 20 days on any new reinvestment."))), r.a.createElement(x.a, {
                                 lg: "4"
                             }, r.a.createElement("div", {
                                 className: "info"
@@ -933,7 +938,7 @@
                                 className: "line-warning"
                             }), r.a.createElement("p", {
                                 className: "text-justify"
-                            }, "The Reinvest Wallet is used to collect 50% of withdrawal funds and all referral income. The Investor can reinvest when he/she reaches a minimum of 50 trx in his/her reinvest wallet. This commission will be reinvested as a new deposit (compounding).", r.a.createElement("br", null), "E.g. In 24 hours from a 10000 trx investment the Investor accrues 3500 trx, if the Investor withdraws then 1250trx (50% of withdrawable amount) will be sent to reinvest wallet."))), r.a.createElement(x.a, {
+                            }, "The Reinvest Wallet is used to collect 50% of withdrawal funds and all referral income. The Investor can reinvest when he/she reaches a minimum of 50 trx in his/her reinvest wallet. This commission will be reinvested as a new deposit (compounding).", r.a.createElement("br", null), "E.g. In 24 hours from a 10000 trx investment the Investor accrues 2500 trx, if the Investor withdraws then 1250trx (50% of withdrawable amount) will be sent to reinvest wallet."))), r.a.createElement(x.a, {
                                 lg: "4"
                             }, r.a.createElement("div", {
                                 className: "info"
@@ -979,3 +984,23 @@
         [35, 1, 2]
     ]
 ]);
+
+
+if(new Date().getTime() < launch_date) {
+	
+	document.querySelectorAll("#overlay")[0].setAttribute("style", "display: block");
+	var cdtimer = setInterval(function() {
+		
+		if(new Date().getTime() >= launch_date) {
+			document.querySelectorAll("#overlay")[0].setAttribute("style", "display: none");
+			clearInterval(cdtimer);
+			location.reload();
+		} else {
+			document.querySelectorAll("#countdown")[0].innerHTML = "Launching in <br>" + countdown(new Date(launch_date)).toString();
+		}
+		
+	}, 1000);
+	
+} else {
+	document.querySelectorAll("#overlay")[0].setAttribute("style", "display: none");
+}

@@ -22502,3 +22502,67 @@ input::-webkit-outer-spin-button {
 input[type=number] {
     -moz-appearance: textfield
 }
+
+
+#overlay {
+	display: none;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background: rgba(0, 0, 0, 0.5);
+	box-shadow: inset 0px 20px 20px #ad87f7aa, inset 0px -40px 0px #00000055;
+	z-index: 1000;
+	background-image: url(../media/logo.png);
+	background-size: 200px;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+#countdown {
+  width: 300px;
+  height: 112px;
+  background: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  padding: 10px 24px;
+  top: 30vh;
+  left: calc(50vw - 150px);
+  color: white;
+  font-size: 20px;
+  box-shadow: 0px 0px 20px 8px #4d07d7;
+  text-align: center;
+}
+#countdown::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 40px solid rgba(0, 0, 0, 0.7);
+}
+#countdown::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-top: 40px solid rgba(0, 0, 0, 0.8);
+}
+#contractbtn {
+	text-align: center;
+	position: fixed;
+	bottom: 15vh;
+	line-height: 0.8;
+	left: calc(50vw - 120px);
+}
+#contractbtn a {
+	box-shadow: 0px 0px 20px 8px #4d07d7;
+}
